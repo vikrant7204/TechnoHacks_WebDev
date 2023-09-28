@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Background Styles */
+.bg-img {
+    background: url(bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Added position relative for absolute positioning of overlay */
+}
+
+.bg-img::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjusted transparency */
+}
+
+/* Content Styles */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 370px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1); /* Adjusted transparency */
+    border-radius: 10px; /* Added border-radius for rounded corners */
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.4); /* Adjusted box-shadow */
+}
+
+.content header {
+    color: white;
+    font-size: 36px; /* Increased font size */
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Input Field Styles */
+.field {
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.4); /* Adjusted transparency */
+    margin-bottom: 15px; /* Increased spacing between fields */
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    padding: 0 10px; /* Added padding for spacing inside the field */
+}
+
+.field span {
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+    font-size: 18px; /* Increased icon size */
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Password Visibility Toggle Styles */
+.space {
+    margin-top: 16px;
+    position: relative;
+}
+
+.show {
+    position: absolute;
+    right: 13px;
+    font-size: 14px; /* Adjusted font size */
+    font-weight: 700;
+    color: #222;
+    cursor: pointer;
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pass-key:valid ~ .show {
+    display: block;
+}
+
+/* Other Styles (Login, Links, etc.) */
+.pass {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.pass a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pass:hover a {
+    text-decoration: underline;
+}
+
+.field input[type="submit"] {
+    background: #3498db;
+    border: 1px solid #2691db;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.field input[type="submit"]:hover {
+    background: #2691db;
+}
+
+.login {
+    color: white;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links {
+    display: flex;
+    cursor: pointer;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+.facebook, .instagram {
+    flex: 1; /* Added flex property to make them fill available space equally */
+    height: 45px;
+    margin-left: 10px;
+    display: flex; /* Added to center icon and text vertically */
+    align-items: center; /* Center vertically */
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    overflow: hidden; /* Prevent text overflow */
+}
+
+.facebook {
+    margin-left: 0;
+    background: #4267B2;
+    border: 1px solid #3e61a8;
+}
+
+.instagram {
+    background: #e1306c;
+    border: 1px solid #df2060;
+}
+
+.facebook:hover {
+    background: #3e61a8;
+}
+
+.instagram:hover {
+    background: #df2060;
+}
+
+.links i {
+    font-size: 20px; /* Increased icon size */
+    margin-right: 8px; /* Added spacing between icon and text */
+}
+
+i span {
+    font-weight: 600; /* Adjusted font weight */
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signup {
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signup a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
