@@ -1,4 +1,4 @@
-/* Import Google font - Poppins */
+
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
         * {
             margin: 0;
@@ -113,7 +113,6 @@
         .form button:hover {
             background: rgb(88, 56, 250);
         }
-        /* Your enhancements to accommodate "Password" and "Confirm Password" fields */
         .form .password-box {
             display: flex;
             column-gap: 15px;
