@@ -7,13 +7,12 @@
     user-select: none;
 }
 
-/* Background Styles */
 .bg-img {
     background: url(bg.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
-    position: relative; /* Added position relative for absolute positioning of overlay */
+    position: relative; 
 }
 
 .bg-img::after {
@@ -23,10 +22,9 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Adjusted transparency */
+    background: rgba(0, 0, 0, 0.7); 
 }
 
-/* Content Styles */
 .content {
     position: absolute;
     top: 50%;
@@ -36,36 +34,36 @@
     padding: 60px 32px;
     width: 370px;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.1); /* Adjusted transparency */
-    border-radius: 10px; /* Added border-radius for rounded corners */
-    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.4); /* Adjusted box-shadow */
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.4); 
 }
 
 .content header {
     color: white;
-    font-size: 36px; /* Increased font size */
+    font-size: 36px; 
     font-weight: 600;
     margin: 0 0 35px 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Input Field Styles */
+
 .field {
     position: relative;
     height: 45px;
     width: 100%;
     display: flex;
-    background: rgba(255, 255, 255, 0.4); /* Adjusted transparency */
-    margin-bottom: 15px; /* Increased spacing between fields */
-    border-radius: 5px; /* Added border-radius for rounded corners */
-    padding: 0 10px; /* Added padding for spacing inside the field */
+    background: rgba(255, 255, 255, 0.4); 
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+    padding: 0 10px; 
 }
 
 .field span {
     color: #222;
     width: 40px;
     line-height: 45px;
-    font-size: 18px; /* Increased icon size */
+    font-size: 18px; 
 }
 
 .field input {
@@ -79,7 +77,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Password Visibility Toggle Styles */
 .space {
     margin-top: 16px;
     position: relative;
@@ -88,7 +85,7 @@
 .show {
     position: absolute;
     right: 13px;
-    font-size: 14px; /* Adjusted font size */
+    font-size: 14px; 
     font-weight: 700;
     color: #222;
     cursor: pointer;
@@ -100,7 +97,6 @@
     display: block;
 }
 
-/* Other Styles (Login, Links, etc.) */
 .pass {
     text-align: left;
     margin: 10px 0;
@@ -145,13 +141,13 @@
 }
 
 .facebook, .instagram {
-    flex: 1; /* Added flex property to make them fill available space equally */
+    flex: 1; 
     height: 45px;
     margin-left: 10px;
-    display: flex; /* Added to center icon and text vertically */
-    align-items: center; /* Center vertically */
-    border-radius: 5px; /* Added border-radius for rounded corners */
-    overflow: hidden; /* Prevent text overflow */
+    display: flex; 
+    align-items: center; 
+    border-radius: 5px; 
+    overflow: hidden; 
 }
 
 .facebook {
@@ -174,12 +170,12 @@
 }
 
 .links i {
-    font-size: 20px; /* Increased icon size */
-    margin-right: 8px; /* Added spacing between icon and text */
+    font-size: 20px; 
+    margin-right: 8px;
 }
 
 i span {
-    font-weight: 600; /* Adjusted font weight */
+    font-weight: 600; 
     letter-spacing: 1px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
