@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the login form and its elements
   const loginForm = document.querySelector("form");
   const emailOrPhoneInput = document.querySelector('input[type="text"]');
   const passwordInput = document.querySelector('input[type="password"]');
